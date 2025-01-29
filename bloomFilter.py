@@ -58,9 +58,9 @@ class BloomFilter:
 if __name__ == "__main__":
     bloom = BloomFilter(size=10000, hash_count=4)
 
-    bloom.add("hello")
-    bloom.add("world")
+    bloom.add("apple")
+    bloom.add("banana")
 
-    print(bloom.check("hello"))
-    print(bloom.check("world"))  
-    print(bloom.check("python")) 
+    print(bloom.check("apple"))
+    print(bloom.check("banana"))  
+    print(bloom.check("cherries")) 
